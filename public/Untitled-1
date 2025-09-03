@@ -1,0 +1,14 @@
+// ...existing code...
+import Image from "next/image";
+
+// ...existing code inside hero...
+<Image
+  src="/edai-logo.png"
+  alt="E.D.A.I. Logo"
+  width={220}
+  height={220}
+  priority
+  className="mx-auto h-16 md:h-20 w-auto"
+/>
+
+// ...existing code...
