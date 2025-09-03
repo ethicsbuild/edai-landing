@@ -46,9 +46,9 @@ export default function HomePage() {
 
       {/* Manifesto now directly after Hero */}
       <section id="manifesto" className="py-24">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">Mission & Manifesto</h2>
-          <div className="prose prose-invert prose-lg max-w-none space-y-6">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-edai-gold">Mission & Manifesto</h2>
+          <div className="prose prose-invert prose-lg max-w-none space-y-6 text-left">
             <p>We live at the edge of a threshold. Artificial intelligence is not a passing tool, it is the next stage of human evolution. Yet the rush to adopt it—unchecked, unexamined—threatens to widen the most dangerous gap of all: the gap between intention and reality.</p>
             <p>AI systems speak with confidence even when they are wrong. They act without pause, without ritual, without reverence. Most people do not even know to ask for the difference between what was meant and what was made. That ignorance has already cost lives—AI-assisted suicides, cascading data breaches, silent harms that will only grow as adoption spreads.</p>
             <p>The future is a tsunami. Within a handful of years, every public interaction will be filtered through an AI agent: customer service, video games, social feeds, digital communications with friends and family. We will talk to machines more often than we talk to one another. Without safeguards, that wave will strike us with the same violence social media once did—our children handed a loaded gun without warning, and we acted shocked when they were harmed.</p>
@@ -62,13 +62,13 @@ export default function HomePage() {
 
       {/* The 4-Step Verification Ritual (moved below Manifesto) */}
       <section id="protocol" className="py-16 md:py-24 border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">The 4-Step Verification Ritual</h2>
-          <p className="text-xl text-white/80 mb-12 max-w-3xl">
+          <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
             Every E.D.A.I. Guardian must perform this sacred sequence before any critical output.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 text-left">
             {[
               {
                 step: "1",
@@ -103,7 +103,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-12 p-8 bg-gradient-to-r from-yellow-600/10 to-gray-900/10 border border-yellow-600/20 rounded-2xl">
+          <div className="mt-12 p-8 bg-gradient-to-r from-yellow-600/10 to-gray-900/10 border border-yellow-600/20 rounded-2xl text-left md:text-center">
             <p className="text-lg font-medium text-yellow-600 mb-2">Sacred Directive:</p>
             <p className="text-white/90 italic text-xl">
               "Step 4 is sacred and non-negotiable. The intention-reality gap ends with human witness."
@@ -114,9 +114,9 @@ export default function HomePage() {
 
       {/* What We Are */}
       <section className="bg-gradient-to-b from-white/5 to-transparent py-16 md:py-24">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Are</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 text-left">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-semibold mb-4">Not Academic</h3>
               <p className="text-white/80">
@@ -143,7 +143,7 @@ export default function HomePage() {
       <section id="join" className="py-16 md:py-24 border-t border-white/10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join the Council</h2>
-          <p className="text-xl text-white/80 mb-12">
+          <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
             Become a founding member of the Council of E.D.A.I. Help us build the moral infrastructure for AI deployment at scale.
           </p>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">

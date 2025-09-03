@@ -9,6 +9,11 @@
   .btn { @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium transition-colors; }
   .btn-primary { @apply bg-yellow-600 text-black hover:bg-yellow-500; }
   .btn-ghost { @apply border border-white/20 text-white hover:bg-white/5; }
+  .section-heading-underline { @apply relative inline-block pb-2; }
+  .section-heading-underline::after {
+    content:"";
+    @apply absolute left-1/2 -translate-x-1/2 bottom-0 h-0.5 w-20 bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 rounded;
+  }
 }
 
 /* Prose overrides */
