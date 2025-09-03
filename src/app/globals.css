@@ -9,5 +9,8 @@
   .btn { @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium transition-colors; }
   .btn-primary { @apply bg-yellow-600 text-black hover:bg-yellow-500; }
   .btn-ghost { @apply border border-white/20 text-white hover:bg-white/5; }
-  .text-edai-gold { @apply text-yellow-600; } /* overridden by custom color if defined */
 }
+
+/* Prose overrides */
+.prose p { @apply text-white/80; }
+.prose strong { @apply text-white; }
