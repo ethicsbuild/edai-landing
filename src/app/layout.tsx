@@ -8,9 +8,9 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "EDAI — Ethical Deployment of Artificial Intelligence",
-  description:
-    "A think tank and action forge for ethical AI—verified deployment protocols, guardian induction, and human-first safeguards.",
+  title: "E.D.A.I. – Ethical Deployment of Artificial Intelligence",
+  description: "Closing the intention–reality gap through ritualized verification and guardianship.",
+  openGraph: { title: "E.D.A.I.", description: "Ethical Deployment of AI.", type: "website" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
