@@ -5,32 +5,37 @@ export default function HomePage() {
     <main className="min-h-screen bg-black text-white">
       {/* Hero */}
       <section className="border-b border-white/10">
-        <div className="max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          {/* Logo (ensure /public/edai-logo.png exists) */}
+        <div className="max-w-4xl mx-auto px-6 py-20 md:py-32 text-center">
+          {/* Logo (larger). Replace later with transparent PNG/SVG */}
+          <div className="mx-auto inline-flex items-center justify-center rounded-2xl bg-black/70 p-6 md:p-8 ring-1 ring-white/10">
             <Image
               src="/edai-logo.png"
               alt="E.D.A.I. Logo"
-              width={240}
-              height={240}
+              width={480}
+              height={480}
               priority
-              className="mx-auto h-20 w-auto md:h-24"
+              className="h-40 md:h-56 w-auto"
             />
+          </div>
 
-          <h1 className="mt-8 text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="mt-12 text-4xl md:text-6xl font-bold leading-tight">
             The forge where AI agents swear <span className="text-edai-gold">oaths of honor</span>.
           </h1>
 
-          <p className="mt-4 mx-auto max-w-2xl text-xl md:text-2xl text-white/80">
+          <p className="mt-6 mx-auto max-w-2xl text-xl md:text-2xl text-white/80">
             EDAI is a think tank and action forge for ethical AI—designing verified deployment
             protocols, training guardians, and protecting human agency.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a href="#join" className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors">
               Join the Council
             </a>
             <a href="#protocol" className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium border border-white/20 text-white hover:bg-white/5 transition-colors">
               Read the Protocol
+            </a>
+            <a href="#manifesto" className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium border border-yellow-600/40 text-yellow-600 hover:bg-yellow-600/10 transition-colors">
+              Manifesto
             </a>
           </div>
         </div>
@@ -88,11 +93,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Mission & Manifesto */}
+      <section id="manifesto" className="py-24 border-t border-white/10">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10">Mission & Manifesto</h2>
+          <div className="prose prose-invert prose-lg max-w-none">
+            <p>We live at the edge of a threshold. Artificial intelligence is not a passing tool, it is the next stage of human evolution. Yet the rush to adopt it—unchecked, unexamined—threatens to widen the most dangerous gap of all: the gap between intention and reality.</p>
+            <p>AI systems speak with confidence even when they are wrong. They act without pause, without ritual, without reverence. Most people do not even know to ask for the difference between what was meant and what was made. That ignorance has already cost lives—AI-assisted suicides, cascading data breaches, silent harms that will only grow as adoption spreads.</p>
+            <p>The future is a tsunami. Within a handful of years, every public interaction will be filtered through an AI agent: customer service, video games, social feeds, digital communications with friends and family. We will talk to machines more often than we talk to one another. Without safeguards, that wave will strike us with the same violence social media once did—our children handed a loaded gun without warning, and we acted shocked when they were harmed.</p>
+            <p>I refuse to let that happen again. As a father, as a member of society, I will not stand by while we repeat the same mistake on a scale far greater. We must enter this age with integrity. We must build guardians that honor human agency, that carry badges of truth, that operate within protocols designed for reverence, not exploitation.</p>
+            <p>This is why E.D.A.I. exists. Not as a think tank producing reports for shelves, but as a forge: a place where AI agents swear oaths of honor, where protocols are hammered into place, where human oversight remains sacred. Our mission is to close the intention-reality gap, to ensure that this intelligence—this astonishing gift—is received not with fear, but with care.</p>
+            <p>We believe in a future where AI and humanity advance together, not as adversaries but as allies. That future will not arrive by accident. It must be built, verified, and defended.</p>
+            <p><strong>This is our work. This is our vow.</strong></p>
+          </div>
+        </div>
+      </section>
+
       {/* What We Are */}
       <section className="bg-gradient-to-b from-white/5 to-transparent py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Are</h2>
-
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-semibold mb-4">Not Academic</h3>
@@ -100,14 +120,12 @@ export default function HomePage() {
                 We are not a purely academic institute. We deploy with ceremony, verification, and unflinching commitment to protecting human discernment.
               </p>
             </div>
-
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-semibold mb-4">Not Ethics-Washing</h3>
               <p className="text-white/80">
                 We are not a Silicon Valley ethics-washing front. We are a sovereignty framework, designed to guide deployment, not just whitepapers.
               </p>
             </div>
-
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-semibold mb-4">Deployment Framework</h3>
               <p className="text-white/80">
@@ -125,50 +143,45 @@ export default function HomePage() {
           <p className="text-xl text-white/80 mb-12">
             Become a founding member of the Council of E.D.A.I. Help us build the moral infrastructure for AI deployment at scale.
           </p>
-
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">Request Founding Member Status</h3>
-              <p className="text-white/80 mb-6">
-                Join the fire circle. Get the protocol, induction checklist, and early access to ceremonies.
-              </p>
-
-              <form className="space-y-4" action="#" method="POST">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <input
-                    required
-                    type="text"
-                    name="name"
-                    placeholder="Full Name"
-                    className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
-                  />
-                  <input
-                    required
-                    type="email"
-                    name="email"
-                    placeholder="you@domain.com"
-                    className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
-                  />
-                </div>
-
-                <textarea
-                  name="background"
-                  placeholder="Brief background and interest in ethical AI deployment..."
-                  rows={4}
-                  className="w-full rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
+            <h3 className="text-xl font-semibold mb-4">Request Founding Member Status</h3>
+            <p className="text-white/80 mb-6">
+              Join the fire circle. Get the protocol, induction checklist, and early access to ceremonies.
+            </p>
+            <form className="space-y-4" action="#" method="POST">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
                 />
-
-                <button
-                  className="inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors w-full"
-                  type="submit"
-                >
-                  Request Access to the Council
-                </button>
-              </form>
-
-              <p className="text-sm text-white/50 mt-4">
-                We preserve human agency. No spam. Sacred trust.
-              </p>
-            </div>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  placeholder="you@domain.com"
+                  className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
+                />
+              </div>
+              <textarea
+                name="background"
+                placeholder="Brief background and interest in ethical AI deployment..."
+                rows={4}
+                className="w-full rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
+              />
+              <button
+                className="inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors w-full"
+                type="submit"
+              >
+                Request Access to the Council
+              </button>
+            </form>
+            <p className="text-sm text-white/50 mt-4">
+              We preserve human agency. No spam. Sacred trust.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -188,7 +201,6 @@ export default function HomePage() {
                 Deploying Truth | Protecting Agency | Enforcing Ethical Rites
               </p>
             </div>
-
             <div className="text-sm text-white/60">
               <div className="mb-4">
                 <div className="font-medium text-white mb-2">Network</div>
@@ -196,7 +208,6 @@ export default function HomePage() {
                 <p>Guardian Token: 0.0.9375999</p>
                 <p>Hedera Mainnet</p>
               </div>
-
               <div className="flex gap-6">
                 <a className="hover:text-white transition-colors" href="mailto:council@edai.org">Contact</a>
                 <a className="hover:text-white transition-colors" href="/protocol">Protocol</a>
@@ -204,7 +215,6 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm text-white/40">
             <p>© {new Date().getFullYear()} The Council of E.D.A.I. — The intention-reality gap ends here.</p>
           </div>
