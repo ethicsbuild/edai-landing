@@ -1,6 +1,6 @@
 import Image from "next/image";
 // Removed unused SubscriptionForm import
-import { CouncilSignupForm } from "@/components/CouncilSignupForm";
+import { CouncilSignupForm } from "../components/CouncilSignupForm";
 
 export const metadata = {
   title: "E.D.A.I. — Ethical Deployment of AI",
