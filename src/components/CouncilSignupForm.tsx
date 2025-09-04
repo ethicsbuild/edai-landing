@@ -18,12 +18,12 @@ export function CouncilSignupForm() {
         const fd = new FormData(form);
         const payload = {
           name: (fd.get("name") as string)?.trim(),
-            email: (fd.get("email") as string)?.trim(),
+          email: (fd.get("email") as string)?.trim(),
           background: (fd.get("background") as string)?.trim(),
-          honey: (fd.get("honey") as string) || ""
+          honey: (fd.get("honey") as string) || "",
         };
 
-        // Honeypot
+        // Honeypot check
         if (payload.honey) {
           setMsg("Processed.");
           setLoading(false);
@@ -32,13 +32,15 @@ export function CouncilSignupForm() {
         }
 
         try {
-          const res = await fetch("/api/submit-signup", {
+          // Use the correct API route name
+          const res = await fetch("/api/subscribe", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload),
           });
           const data = await res.json();
           if (res.ok) {
+            // redirect on success
             window.location.href = "/thank-you";
             return;
           } else {
