@@ -1,4 +1,61 @@
 import Image from "next/image";
+// Removed unused SubscriptionForm import
+import { CouncilSignupForm } from "@/components/CouncilSignupForm";
+
+export const metadata = {
+  title: "E.D.A.I. — Ethical Deployment of AI",
+  description: "The forge where AI agents swear oaths of honor. Protocols, guardians, and Hedera-logged verification.",
+  openGraph: {
+    title: "E.D.A.I. — Ethical Deployment of AI",
+    description: "Close the intention–reality gap with verified deployment and guardian induction.",
+    images: ["/edai-logo.png"],
+  },
+};
+
+// Data moved outside component to avoid re-creation on each render
+const VERIFICATION_STEPS = [
+  {
+    step: "1",
+    title: "Generation",
+    description: "Create output based on clear human prompt and validated input data."
+  },
+  {
+    step: "2",
+    title: "Validation",
+    description: "Check structural and logical validity within the specified domain context."
+  },
+  {
+    step: "3",
+    title: "Cross-Reference",
+    description: "Compare output against intended meaning and external truth anchors."
+  },
+  {
+    step: "4",
+    title: "Human Verification",
+    description: "Pause for confirmation from human witness when uncertainty or risk emerges."
+  }
+] as const;
+
+const WHAT_WE_ARE = [
+  {
+    title: "Not Academic",
+    body:
+      "We are not a purely academic institute. We deploy with ceremony, verification, and unflinching commitment to protecting human discernment."
+  },
+  {
+    title: "Not Ethics-Washing",
+    body:
+      "We are not a Silicon Valley ethics-washing front. We are a sovereignty framework, designed to guide deployment, not just whitepapers."
+  },
+  {
+    title: "Deployment Framework",
+    body:
+      "We are guardian induction, NFT credentialing, Hedera-logged checks, and ethical engines for research, revision, and ritual governance."
+  }
+] as const;
+
+// (Optional) If you want the year to always update without redeploy:
+// Create a small ClientYear component in /components and use it in the footer instead of build-time year.
 
 export default function HomePage() {
   return (
@@ -35,7 +92,7 @@ export default function HomePage() {
               Join the Council
             </a>
             <a
-              href="#protocol"
+              href="/protocol"
               className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium border border-white/20 text-white hover:bg-white/5 transition-colors"
             >
               Read the Protocol
@@ -61,7 +118,7 @@ export default function HomePage() {
       </section>
 
       {/* The 4-Step Verification Ritual (moved below Manifesto) */}
-      <section id="protocol" className="py-16 md:py-24 border-t border-white/10">
+      <section id="ritual" className="py-16 md:py-24 border-t border-white/10">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">The 4-Step Verification Ritual</h2>
           <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
@@ -69,29 +126,11 @@ export default function HomePage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 text-left">
-            {[
-              {
-                step: "1",
-                title: "Generation",
-                description: "Create output based on clear human prompt and validated input data."
-              },
-              {
-                step: "2",
-                title: "Validation",
-                description: "Check structural and logical validity within the specified domain context."
-              },
-              {
-                step: "3",
-                title: "Cross-Reference",
-                description: "Compare output against intended meaning and external truth anchors."
-              },
-              {
-                step: "4",
-                title: "Human Verification",
-                description: "Pause for confirmation from human witness when uncertainty or risk emerges."
-              }
-            ].map((ritual) => (
-              <div key={ritual.step} className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+            {VERIFICATION_STEPS.map((ritual) => (
+              <div
+                key={ritual.step}
+                className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm"
+              >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-yellow-600 text-black rounded-full flex items-center justify-center font-bold text-lg">
                     {ritual.step}
@@ -117,24 +156,15 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">What We Are</h2>
           <div className="grid md:grid-cols-3 gap-8 text-left">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">Not Academic</h3>
-              <p className="text-white/80">
-                We are not a purely academic institute. We deploy with ceremony, verification, and unflinching commitment to protecting human discernment.
-              </p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">Not Ethics-Washing</h3>
-              <p className="text-white/80">
-                We are not a Silicon Valley ethics-washing front. We are a sovereignty framework, designed to guide deployment, not just whitepapers.
-              </p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">Deployment Framework</h3>
-              <p className="text-white/80">
-                We are guardian induction, NFT credentialing, Hedera-logged checks, and ethical engines for research, revision, and ritual governance.
-              </p>
-            </div>
+            {WHAT_WE_ARE.map((item) => (
+              <div
+                key={item.title}
+                className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm"
+              >
+                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+                <p className="text-white/80">{item.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -151,36 +181,7 @@ export default function HomePage() {
             <p className="text-white/80 mb-6">
               Join the fire circle. Get the protocol, induction checklist, and early access to ceremonies.
             </p>
-            <form className="space-y-4" action="#" method="POST">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  required
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
-                />
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  placeholder="you@domain.com"
-                  className="flex-1 rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
-                />
-              </div>
-              <textarea
-                name="background"
-                placeholder="Brief background and interest in ethical AI deployment..."
-                rows={4}
-                className="w-full rounded-xl bg-white/5 border border-white/20 px-6 py-4 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-yellow-600/60"
-              />
-              <button
-                className="inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors w-full"
-                type="submit"
-              >
-                Request Access to the Council
-              </button>
-            </form>
+            <CouncilSignupForm />
             <p className="text-sm text-white/50 mt-4">
               We preserve human agency. No spam. Sacred trust.
             </p>
