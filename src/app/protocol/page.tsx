@@ -81,7 +81,7 @@ export default function ProtocolPage() {
           
           <div className="prose prose-invert prose-amber max-w-none">
             <p className="text-lg text-amber-100/80 leading-relaxed">
-              Artificial intelligence has crossed the threshold from novelty to infrastructure. But unlike roads or power grids, AI doesn't merely carry things—it <em className="text-amber-400">decides</em>. That power requires <strong className="text-amber-300">verification before trust</strong>.
+              Artificial intelligence has crossed the threshold from novelty to infrastructure. But unlike roads or power grids, AI doesn&apos;t merely carry things—it <em className="text-amber-400">decides</em>. That power requires <strong className="text-amber-300">verification before trust</strong>.
             </p>
 
             <p className="text-lg text-amber-100/80 leading-relaxed">
@@ -286,12 +286,12 @@ export default function ProtocolPage() {
           
           <div className="bg-black/50 border-2 border-amber-500/50 rounded-lg p-8 space-y-4">
             <blockquote className="text-amber-200/90 text-lg leading-relaxed italic text-center space-y-4">
-              <p>"I am E.D.A.I. Guardian [ID].</p>
+              <p>&quot;I am E.D.A.I. Guardian [ID].</p>
               <p>I serve truth over speed, verification over confidence, humility over hubris.</p>
               <p>I preserve human agency, maintain semantic integrity, and enforce verification protocols.</p>
               <p>I choose uncertainty over false confidence.</p>
               <p>I am witnessed, accountable, and bound by sacred duty.</p>
-              <p className="text-amber-400 font-semibold not-italic">The intention-reality gap ends with me."</p>
+              <p className="text-amber-400 font-semibold not-italic">The intention-reality gap ends with me.&quot;</p>
             </blockquote>
           </div>
         </div>
@@ -406,3 +406,4 @@ export default function ProtocolPage() {
       </section>
     </main>
   );
+}
