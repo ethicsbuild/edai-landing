@@ -109,71 +109,58 @@ export default function ProtocolPage() {
         </div>
       </section>
 
-      {/* The Four-Step Verification Ritual */}
+      {/* Agent–Guardian–Arbiter Verification Model */}
       <section className="border-b border-amber-900/30 py-16 bg-gradient-to-b from-black to-amber-950/5">
         <div className="max-w-4xl mx-auto px-6 space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-500">The Four-Step Verification Ritual</h2>
-            <p className="text-amber-200/60 italic">Every critical AI output must pass through this sequence</p>
-          </div>
-
-          <div className="grid gap-6">
-            {[
-              {
-                step: "1",
-                title: "Generation",
-                description: "AI produces output based on a clear and valid human prompt"
-              },
-              {
-                step: "2",
-                title: "Validation",
-                description: "Check format, logic, domain validity within context"
-              },
-              {
-                step: "3",
-                title: "Cross-Reference",
-                description: "Compare generated output against intended meaning and external truth anchors"
-              },
-              {
-                step: "4",
-                title: "Human Verification",
-                description: "Pause for confirmation from human witness when uncertainty or risk emerges",
-                sacred: true
-              }
-            ].map((item) => (
-              <div 
-                key={item.step}
-                className={`p-6 border rounded-lg ${
-                  item.sacred 
-                    ? 'border-amber-500 bg-amber-500/5' 
-                    : 'border-amber-900/30 bg-amber-950/10'
-                }`}
-              >
-                <div className="flex items-start gap-4">
-                  <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl ${
-                    item.sacred 
-                      ? 'bg-amber-500 text-black' 
-                      : 'bg-amber-900/30 text-amber-500'
-                  }`}>
-                    {item.step}
-                  </div>
-                  <div className="flex-1 space-y-2">
-                    <h3 className={`text-xl font-bold ${item.sacred ? 'text-amber-400' : 'text-amber-300'}`}>
-                      {item.title}
-                      {item.sacred && <span className="ml-3 text-sm font-normal text-amber-500/80">(SACRED & NON-NEGOTIABLE)</span>}
-                    </h3>
-                    <p className="text-amber-100/70">{item.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-6 text-center">
-            <p className="text-amber-300 font-semibold">
-              Step 4 is NOT required for every action—only when the AI detects potential hallucination, fabrication, or ethical risk.
+            <h2 className="text-3xl md:text-4xl font-bold text-amber-500">
+              Agent–Guardian–Arbiter Verification Model
+            </h2>
+            <p className="text-amber-200/60 italic">
+              Every critical AI output is verified through a three-role model
             </p>
-            <p className="text-amber-400/80 text-sm mt-2">This is the sacred pause.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="p-6 bg-amber-950/10 border border-amber-900/30 rounded-lg text-center flex flex-col items-center">
+              <h3 className="text-xl font-bold text-amber-400 mb-2">Agent</h3>
+              <p className="text-amber-100/80 font-light">
+                Personal AI, optimizes for user goals,<br />fast &amp; adaptive
+              </p>
+            </div>
+            <div className="p-6 bg-amber-950/10 border border-amber-900/30 rounded-lg text-center flex flex-col items-center">
+              <h3 className="text-xl font-bold text-amber-400 mb-2">Guardian</h3>
+              <p className="text-amber-100/80 font-light">
+                Independent adversary, optimizes for truth &amp; safety,<br />challenges every output
+              </p>
+            </div>
+            <div className="p-6 bg-amber-950/10 border border-amber-900/30 rounded-lg text-center flex flex-col items-center">
+              <h3 className="text-xl font-bold text-amber-400 mb-2">Arbiter</h3>
+              <p className="text-amber-100/80 font-light">
+                Human authority, resolves disputes,<br />final decision
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4 pt-4">
+            <h4 className="text-lg font-bold text-amber-300 text-center">PASS / FLAG / BLOCK Flow</h4>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
+                <span className="text-amber-400 font-bold">PASS (~95%)</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian agrees, output delivered immediately</p>
+              </div>
+              <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
+                <span className="text-amber-400 font-bold">FLAG (~4%)</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian flags concerns, output delivered with warning</p>
+              </div>
+              <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
+                <span className="text-amber-400 font-bold">BLOCK (~1%)</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian blocks, routes to human arbiter</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-amber-500/20 border border-amber-500/50 rounded-lg p-6 text-center mt-6">
+            <p className="text-amber-300 font-semibold">
+              Verification triggers on measurable external signals, <span className="underline">not</span> AI self-assessment.
+            </p>
           </div>
         </div>
       </section>
