@@ -9,7 +9,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: "E.D.A.I. – Ethical Deployment of Artificial Intelligence",
-  description: "Closing the intention–reality gap through ritualized verification and guardianship.",
+  description: "A system that knows the edge of its own knowledge. Closing the intention–reality gap, starting with our own.",
   openGraph: { title: "E.D.A.I.", description: "Ethical Deployment of AI.", type: "website" },
 };
 

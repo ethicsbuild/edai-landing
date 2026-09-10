@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'The E.D.A.I. Protocol | Ethical Deployment of Artificial Intelligence',
-  description: 'Complete protocol documentation for E.D.A.I. - the verification framework ensuring ethical AI deployment through ceremony, verification, and immutable accountability.',
+  description: 'The E.D.A.I. verification model, the Guardian oath, and an honest account of what exists today: a system built around a machine that knows the edge of its own knowledge.',
   openGraph: {
     title: 'The E.D.A.I. Protocol',
     description: 'Ethical Deployment of Artificial Intelligence - Full Protocol Documentation',
@@ -29,12 +29,34 @@ export default function ProtocolPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-6">
               <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
-                <span className="text-amber-500 font-mono text-sm">STATUS: LIVE</span>
+                <span className="text-amber-500 font-mono text-sm">STATUS: PROTOTYPE</span>
               </div>
               <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
                 <span className="text-amber-500 font-mono text-sm">NETWORK: HEDERA MAINNET</span>
               </div>
             </div>
+            <p className="text-amber-200/70 font-mono text-sm pt-4 max-w-2xl mx-auto">
+              Credential minted. Topics created. Zero verification events logged as of September 2026. This line will change when that number does.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* The First Principle */}
+      <section className="border-b border-amber-900/30 py-16">
+        <div className="max-w-4xl mx-auto px-6 space-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-500">The First Principle</h2>
+          <p className="text-xl text-amber-200/80 font-light">A system that knows the edge of its own knowledge.</p>
+          <div className="prose prose-invert prose-amber max-w-none space-y-4">
+            <p className="text-lg text-amber-100/80 leading-relaxed">
+              The most dangerous property of a deployed AI is unearned certainty. &ldquo;I don&apos;t know&rdquo; is not a failure state. It is load-bearing structure. A system that can mark the edge of its own knowledge can hand the decision to a human at exactly the moment a human is needed. A system that cannot will make the decision anyway and record it as a finding.
+            </p>
+            <p className="text-lg text-amber-100/80 leading-relaxed">
+              Verification is what that principle looks like when it is built rather than promised: a second, adversarial reading whose job is to find the edge; a human who is summoned by the machine&apos;s own admission that it has reached one; and a record of the moment it said so.
+            </p>
+            <p className="text-lg text-amber-100/80 leading-relaxed">
+              The measure of the system is not how often it is right. It is how often it correctly stops because it knew it was past its edge.
+            </p>
           </div>
         </div>
       </section>
@@ -98,6 +120,10 @@ export default function ProtocolPage() {
               </li>
               <li className="flex items-start">
                 <span className="text-amber-500 mr-3">•</span>
+                <span>Unable to say &ldquo;I don&apos;t know,&rdquo; so it says something else</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-500 mr-3">•</span>
                 <span>Helpful, but sometimes harmful</span>
               </li>
             </ul>
@@ -144,16 +170,16 @@ export default function ProtocolPage() {
             <h4 className="text-lg font-bold text-amber-300 text-center">PASS / FLAG / BLOCK Flow</h4>
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
-                <span className="text-amber-400 font-bold">PASS (~95%)</span>
-                <p className="text-amber-100/80 text-sm mt-1">Guardian agrees, output delivered immediately</p>
+                <span className="text-amber-400 font-bold">PASS</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian finds no edge; output delivered</p>
               </div>
               <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
-                <span className="text-amber-400 font-bold">FLAG (~4%)</span>
-                <p className="text-amber-100/80 text-sm mt-1">Guardian flags concerns, output delivered with warning</p>
+                <span className="text-amber-400 font-bold">FLAG</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian finds a seam; output delivered with the seam named</p>
               </div>
               <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 text-center">
-                <span className="text-amber-400 font-bold">BLOCK (~1%)</span>
-                <p className="text-amber-100/80 text-sm mt-1">Guardian blocks, routes to human arbiter</p>
+                <span className="text-amber-400 font-bold">BLOCK</span>
+                <p className="text-amber-100/80 text-sm mt-1">Guardian finds an edge; the machine stops and a human is summoned. The record captures the moment the system admitted it did not know.</p>
               </div>
             </div>
           </div>
@@ -218,15 +244,15 @@ export default function ProtocolPage() {
             <div className="grid md:grid-cols-3 gap-4">
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Guardian Credentials</p>
-                <p className="text-amber-200/60 text-sm">Issued as NFTs</p>
+                <p className="text-amber-200/60 text-sm">Issued as NFTs. One minted.</p>
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Verification Events</p>
-                <p className="text-amber-200/60 text-sm">Immutably logged</p>
+                <p className="text-amber-200/60 text-sm">Topic created. None logged yet.</p>
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Public Auditability</p>
-                <p className="text-amber-200/60 text-sm">Full transparency</p>
+                <p className="text-amber-200/60 text-sm">Anyone can open the topics and see the same zero we report.</p>
               </div>
             </div>
           </div>
@@ -255,6 +281,10 @@ export default function ProtocolPage() {
               {
                 phase: "Consecration",
                 description: "Human witness confirms readiness; credential logged to Hedera"
+              },
+              {
+                phase: "Deferral at the Edge of Knowledge",
+                description: "In deployment, the human is not a checkpoint the machine passes through. The human is called by the machine's own recognition of its limit, and the record keeps the moment it said so."
               }
             ].map((item, i) => (
               <div key={i} className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg">
@@ -284,21 +314,51 @@ export default function ProtocolPage() {
         </div>
       </section>
 
+      {/* What We Do Not Yet Know */}
+      <section className="border-b border-amber-900/30 py-16">
+        <div className="max-w-4xl mx-auto px-6 space-y-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-500">What We Do Not Yet Know</h2>
+
+          <div className="space-y-6">
+            <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
+              <h3 className="text-amber-400 font-bold">Demonstrated versus borrowed</h3>
+              <p className="text-amber-100/80">
+                Any hallucination-rate, speed, or compliance figure previously cited for E.D.A.I. came from other organizations&apos; published results. They are feasibility evidence, not E.D.A.I.&apos;s track record.
+              </p>
+            </div>
+            <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
+              <h3 className="text-amber-400 font-bold">What pilots have shown</h3>
+              <p className="text-amber-100/80">
+                Early interest. Not longitudinal validation. No pilot has been run to completion.
+              </p>
+            </div>
+            <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
+              <h3 className="text-amber-400 font-bold">Three open problems</h3>
+              <ul className="text-amber-100/80 space-y-2 list-none pl-0">
+                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Calibration: recognizing uncertainty in the first place. The confident error never flags itself.</span></li>
+                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Human capacity: verifiers need time, independence, and expertise to actually review at scale rather than rubber-stamp.</span></li>
+                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Incentive drift: a verification economy is gamed the moment it rewards throughput over judgment.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Deployment Information */}
       <section className="border-b border-amber-900/30 py-16">
         <div className="max-w-4xl mx-auto px-6 space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-amber-500">For Institutions</h2>
-          
+
           <div className="space-y-6">
             <p className="text-amber-100/80 text-lg">
-              E.D.A.I. can be deployed across multiple sectors with sector-specific compliance frameworks:
+              The model is sector-agnostic. Sector-specific frameworks are drafted, not finished:
             </p>
 
             <div className="grid md:grid-cols-2 gap-4">
               {["Healthcare", "Finance", "Legal", "Education"].map((sector) => (
                 <div key={sector} className="p-4 bg-amber-950/20 border border-amber-900/30 rounded-lg">
                   <p className="text-amber-400 font-semibold">{sector}</p>
-                  <p className="text-amber-200/60 text-sm">Compliance frameworks available</p>
+                  <p className="text-amber-200/60 text-sm">Framework in draft</p>
                 </div>
               ))}
             </div>
@@ -341,7 +401,7 @@ export default function ProtocolPage() {
               </div>
               <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg">
                 <p className="text-amber-400 font-semibold mb-2">Hedera-Logged Updates</p>
-                <p className="text-amber-200/60 text-sm">Immutable record of protocol evolution</p>
+                <p className="text-amber-200/60 text-sm">Intended record of protocol evolution. Not yet in use.</p>
               </div>
               <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg">
                 <p className="text-amber-400 font-semibold mb-2">Weighted Community Input</p>
@@ -371,7 +431,7 @@ export default function ProtocolPage() {
         <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold text-amber-500">Begin Verification</h2>
           <p className="text-amber-200/80 text-lg max-w-2xl mx-auto">
-            The intention-reality gap ends here. Deploy verified AI with ceremony, accountability, and immutable proof.
+            The code is public. The first logged verification event will be the first real claim this page makes.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 

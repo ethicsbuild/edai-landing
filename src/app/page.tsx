@@ -9,11 +9,11 @@ import { CouncilSignupForm } from "../components/CouncilSignupForm";
 export const metadata = {
   title: "E.D.A.I. — Ethical Deployment of AI",
   description:
-    "The forge where AI agents swear oaths of honor. Protocols, guardians, and Hedera-logged verification.",
+    "A machine that cannot say \"I don't know\" will say something else instead. E.D.A.I. exists to build the tremor in.",
   openGraph: {
     title: "E.D.A.I. — Ethical Deployment of AI",
     description:
-      "Close the intention–reality gap with verified deployment and guardian induction.",
+      "A system that knows the edge of its own knowledge. Verification model, Guardian oath, and an honest account of what exists today.",
     images: ["/edai-logo.png"],
   },
 };
@@ -36,38 +36,112 @@ export default function HomePage() {
           </div>
 
           <h1 className="mt-12 text-4xl md:text-6xl font-bold leading-tight">
-            The forge where AI agents swear{" "}
-            <span className="text-edai-gold">oaths of honor</span>.
+            A machine that cannot say{" "}
+            <span className="text-edai-gold">&ldquo;I don&apos;t know&rdquo;</span>{" "}
+            will say something else instead.
           </h1>
 
           <p className="mt-6 mx-auto max-w-2xl text-xl md:text-2xl text-white/80">
-            E.D.A.I. is a think tank and action forge for ethical AI—designing
-            verified deployment protocols, training guardians, and protecting
-            human agency.
+            It will fill the gap with a plausible answer and reason forward from
+            it with the same confidence it had a moment ago. The danger is not
+            that it is wrong. It is that it is wrong without a tremor.
+          </p>
+
+          <p className="mt-6 mx-auto max-w-2xl text-xl md:text-2xl text-white">
+            E.D.A.I. exists to build that tremor in.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="#join"
+              href="/protocol"
               className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors"
             >
-              Join the Council
+              Read the Protocol
             </a>
             <a
-              href="/protocol"
+              href="#join"
               className="inline-flex items-center justify-center rounded-xl px-6 py-3 text-lg font-medium border border-white/20 text-white hover:bg-white/5 transition-colors"
             >
-              Read the Protocol
+              Join the Council
             </a>
           </div>
         </div>
       </section>
 
-      {/* Mission / Manifesto */}
+      {/* The First Principle */}
+      <section id="first-principle" className="py-24 border-b border-white/10">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-edai-gold text-center">
+            The First Principle
+          </h2>
+          <div className="prose prose-invert prose-lg max-w-none space-y-6">
+            <p>
+              The most dangerous property of a deployed AI is unearned
+              certainty.
+            </p>
+            <p>
+              &ldquo;I don&apos;t know&rdquo; is not a failure state. It is
+              load-bearing structure. A system that can mark the edge of its own
+              knowledge can hand the decision to a human at exactly the moment a
+              human is needed. A system that cannot will make the decision anyway
+              and record it as a finding.
+            </p>
+            <p>
+              Verification is what that principle looks like when it is built
+              rather than promised: a second, adversarial reading whose job is to
+              find the edge; a human who is summoned by the machine&apos;s own
+              admission that it has reached one; and a record of the moment it
+              said so.
+            </p>
+            <p>
+              The measure of the system is not how often it is right. It is how
+              often it correctly stops because it knew it was past its edge.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What exists today */}
+      <section id="state" className="py-24 border-b border-white/10">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-edai-gold text-center">
+            What exists today, and what does not
+          </h2>
+          <div className="prose prose-invert prose-lg max-w-none space-y-6">
+            <p>
+              This page used to describe E.D.A.I. in the voice of a finished
+              product. That was the same intention&ndash;reality gap the work is
+              meant to close, so here is the actual state.
+            </p>
+            <p>
+              <strong>Built:</strong> the verification model (Agent, Guardian,
+              Arbiter); the Guardian oath and induction rite; a Guardian
+              credential minted on Hedera mainnet (one issued); two public Hedera
+              topics created to hold verification and compliance events.
+            </p>
+            <p>
+              <strong>Not yet done:</strong> no verification events have been
+              logged to those topics. No pilot has been run to completion. Every
+              percentage that used to appear on this site was a target, not a
+              measurement, and it has been removed.
+            </p>
+            <p>
+              <strong>Open problems we have not solved:</strong> recognizing
+              uncertainty in the first place, the confident error that never
+              flags itself; giving human verifiers enough time, independence,
+              and expertise to actually review rather than rubber-stamp; and
+              keeping a verification economy from rewarding throughput over
+              judgment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission */}
       <section id="manifesto" className="py-24">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-edai-gold">
-            Mission &amp; Manifesto
+            Mission
           </h2>
           <div className="prose prose-invert prose-lg max-w-none space-y-6 text-left">
             <p>
@@ -75,12 +149,11 @@ export default function HomePage() {
               with integrity, and human agency remains sacred.
             </p>
             <p>
-              Guardianship is a practice, not a press release. Our protocols are
-              verified, logged on Hedera, and designed for real-world use.
+              Guardianship is a practice, not a press release.
             </p>
             <p>
               This is our work. This is our vow: close the intention–reality
-              gap.
+              gap, starting with our own.
             </p>
           </div>
         </div>
@@ -123,7 +196,7 @@ export default function HomePage() {
             <div className="text-sm text-white/60">
               <div className="mb-4">
                 <div className="font-medium text-white mb-2">Network</div>
-                <p>Hedera Mainnet</p>
+                <p>Guardian credential and event topics on Hedera Mainnet</p>
               </div>
               <div className="flex gap-6">
                 <a className="hover:text-white transition-colors" href="mailto:council@edai.org">
@@ -131,9 +204,6 @@ export default function HomePage() {
                 </a>
                 <a className="hover:text-white transition-colors" href="/protocol">
                   Protocol
-                </a>
-                <a className="hover:text-white transition-colors" href="/governance">
-                  Governance
                 </a>
               </div>
             </div>
