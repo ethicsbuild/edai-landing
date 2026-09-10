@@ -133,6 +133,14 @@ export default function HomePage() {
               keeping a verification economy from rewarding throughput over
               judgment.
             </p>
+            <p>
+              A fuller account, which supersedes the July 2025 investment white
+              paper, is here:{" "}
+              <a href="/state-of-the-work" className="text-edai-gold underline">
+                State of the Work, September 2026
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
