@@ -36,9 +36,9 @@ export default function HomePage() {
           </div>
 
           <h1 className="mt-12 text-4xl md:text-6xl font-bold leading-tight">
-            A machine that cannot say{" "}
-            <span className="text-edai-gold">&ldquo;I don&apos;t know&rdquo;</span>{" "}
-            will say something else instead.
+            <span className="block">A machine that cannot say</span>
+            <span className="block text-edai-gold whitespace-nowrap">&ldquo;I don&apos;t know&rdquo;</span>
+            <span className="block">will say something else instead.</span>
           </h1>
 
           <p className="mt-6 mx-auto max-w-2xl text-xl md:text-2xl text-white/80">
