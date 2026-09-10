@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white text-center">
       {/* Hero */}
       <section id="hero" className="border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
@@ -151,7 +151,7 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-edai-gold">
             Mission
           </h2>
-          <div className="prose prose-invert prose-lg max-w-none space-y-6 text-left">
+          <div className="prose prose-invert prose-lg max-w-none space-y-6">
             <p>
               We build rites and safeguards for AI deployment—so systems act
               with integrity, and human agency remains sacred.
@@ -187,15 +187,15 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t border-white/10">
         <div className="max-w-5xl mx-auto px-6 py-16">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-16">
             <div>
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="w-8 h-8 bg-yellow-600 rounded flex items-center justify-center">
                   <span className="text-black font-bold text-sm">E</span>
                 </div>
                 <span className="font-semibold">E.D.A.I.</span>
               </div>
-              <p className="text-white/60 max-w-md">
+              <p className="text-white/60 max-w-md mx-auto">
                 Ethical Deployment of Artificial Intelligence
                 <br />
                 Deploying Truth | Protecting Agency | Enforcing Ethical Rites
@@ -206,7 +206,7 @@ export default function HomePage() {
                 <div className="font-medium text-white mb-2">Network</div>
                 <p>Guardian credential and event topics on Hedera Mainnet</p>
               </div>
-              <div className="flex gap-6">
+              <div className="flex justify-center gap-6">
                 <a className="hover:text-white transition-colors" href="mailto:council@edai.org">
                   Contact
                 </a>

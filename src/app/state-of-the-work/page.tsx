@@ -19,7 +19,7 @@ const H2 = ({ children }: { children: React.ReactNode }) => (
 
 export default function StateOfTheWorkPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white text-center">
       <section className="border-b border-amber-900/30 bg-gradient-to-b from-black via-amber-950/10 to-black py-16">
         <div className="max-w-4xl mx-auto px-6 space-y-4">
           <p className="text-amber-500 font-mono text-sm">SEPTEMBER 2026</p>

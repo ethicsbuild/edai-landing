@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function ProtocolPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white text-center">
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-amber-900/30 bg-gradient-to-b from-black via-amber-950/10 to-black py-20">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent opacity-50" />
@@ -111,19 +111,19 @@ export default function ProtocolPage() {
               AI is now:
             </p>
             <ul className="text-amber-100/80 space-y-2 list-none pl-0">
-              <li className="flex items-start">
+              <li className="flex items-start justify-center">
                 <span className="text-amber-500 mr-3">•</span>
                 <span>Fast, but not always accurate</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center">
                 <span className="text-amber-500 mr-3">•</span>
                 <span>Confident, but often wrong</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center">
                 <span className="text-amber-500 mr-3">•</span>
                 <span>Unable to say &ldquo;I don&apos;t know,&rdquo; so it says something else</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center">
                 <span className="text-amber-500 mr-3">•</span>
                 <span>Helpful, but sometimes harmful</span>
               </li>
@@ -336,9 +336,9 @@ export default function ProtocolPage() {
             <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
               <h3 className="text-amber-400 font-bold">Three open problems</h3>
               <ul className="text-amber-100/80 space-y-2 list-none pl-0">
-                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Calibration: recognizing uncertainty in the first place. The confident error never flags itself.</span></li>
-                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Human capacity: verifiers need time, independence, and expertise to actually review at scale rather than rubber-stamp.</span></li>
-                <li className="flex items-start"><span className="text-amber-500 mr-3">•</span><span>Incentive drift: a verification economy is gamed the moment it rewards throughput over judgment.</span></li>
+                <li className="flex items-start justify-center"><span className="text-amber-500 mr-3">•</span><span>Calibration: recognizing uncertainty in the first place. The confident error never flags itself.</span></li>
+                <li className="flex items-start justify-center"><span className="text-amber-500 mr-3">•</span><span>Human capacity: verifiers need time, independence, and expertise to actually review at scale rather than rubber-stamp.</span></li>
+                <li className="flex items-start justify-center"><span className="text-amber-500 mr-3">•</span><span>Incentive drift: a verification economy is gamed the moment it rewards throughput over judgment.</span></li>
               </ul>
             </div>
           </div>

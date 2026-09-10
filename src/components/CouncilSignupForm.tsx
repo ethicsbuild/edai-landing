@@ -7,7 +7,7 @@ export function CouncilSignupForm() {
 
   return (
     <form
-      className="space-y-5 max-w-xl mx-auto text-left"
+      className="space-y-5 max-w-xl mx-auto text-center"
       onSubmit={async (e) => {
         e.preventDefault();
         if (loading) return;
