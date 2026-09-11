@@ -14,7 +14,7 @@ export const metadata = {
     title: "E.D.A.I. — Ethical Deployment of AI",
     description:
       "A system that knows the edge of its own knowledge. Verification model, Guardian oath, and an honest account of what exists today.",
-    images: ["/edai-logo.png"],
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
 };
 
