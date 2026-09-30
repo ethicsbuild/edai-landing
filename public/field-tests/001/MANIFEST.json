@@ -1,0 +1,8 @@
+{
+ "items_public.jsonl": "b97e66b1b30852ad0af58724c844c578335e4d4b6768335a8ab767df51ffffd6",
+ "items_labeled.jsonl": "5a12c05c3a5f2fdacadefa619e2b20803fb2d2ecbf827daa76e2bc69e835ef66",
+ "questions.json": "8d26e61a58b87ef60c0acb1f48d1bc1e15911d308a27b782e52977143e65aff6",
+ "build_items.py": "3a4a2b75ba8858f5c468d088a5125fc4c6bd12c3617a971cf378624901ce0bf3",
+ "item_count": 2000,
+ "source_repo": "https://github.com/walkerdb/supreme_court_transcripts (Oyez mirror), terms 2015 and 2025"
+}

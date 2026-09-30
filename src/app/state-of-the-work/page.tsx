@@ -74,6 +74,10 @@ export default function StateOfTheWorkPage() {
             No verification event has ever been logged to either Hedera topic. Anyone can open them and see the same zero reported here.
           </P>
           <P>
+            Update, September 30, 2026: the verification topic now carries one message, the pre-registration of{' '}
+            <Link href="/field-tests/001-jev-calibration" className="underline text-amber-400">Field Test 001</Link>, a calibration test of another lab&apos;s model, with the protocol&apos;s hash written to the ledger before the first request. It is a record of a promise, not a verification event. That count is still zero.
+          </P>
+          <P>
             No pilot has been run. The paper&apos;s section on early enterprise engagement in healthcare, financial services, and legal described conversations that did not take place.
           </P>
           <P>

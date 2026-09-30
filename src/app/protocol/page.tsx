@@ -36,7 +36,8 @@ export default function ProtocolPage() {
               </div>
             </div>
             <p className="text-amber-200/70 font-mono text-sm pt-4 max-w-2xl mx-auto">
-              Credential minted. Topics created. Zero verification events logged as of September 2026. This line will change when that number does.{' '}
+              Credential minted. Topics created. One message on the verification topic as of September 30, 2026: the pre-registration of{' '}
+              <Link href="/field-tests/001-jev-calibration" className="underline text-amber-400">Field Test 001</Link>, a record of a promise, not yet a verification event. This line will change when that number does.{' '}
               <Link href="/state-of-the-work" className="underline text-amber-400">State of the Work</Link>
             </p>
           </div>

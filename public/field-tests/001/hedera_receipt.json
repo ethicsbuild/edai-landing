@@ -1,0 +1,14 @@
+{
+  "status": "SUCCESS",
+  "topicId": "0.0.9376001",
+  "sequenceNumber": "1",
+  "consensusTimestamp": "1790760619.615324582",
+  "transactionId": "0.0.9083680@1790760611.884559779",
+  "hashscanTransaction": "https://hashscan.io/mainnet/transaction/0.0.9083680@1790760611.884559779",
+  "hashscanTopic": "https://hashscan.io/mainnet/topic/0.0.9376001",
+  "mirrorMessages": "https://mainnet.mirrornode.hedera.com/api/v1/topics/0.0.9376001/messages",
+  "mirrorTransaction": "https://mainnet.mirrornode.hedera.com/api/v1/transactions/0.0.9083680-1790760611-884559779",
+  "message": "EDAI-FT-001 PREREG 2026-09-30 | Jev calibration field test, protocol v1.1 | protocol sha256 3121c204d9cfa8535ba322e91b15386b7180a3e04fcdfa7c6b3a103f17f4c185 | manifest sha256 c2cdf99ca41a56d93335da357797ff96dd1d2a4accb02637910618adecea3bda | edai.quest",
+  "submittedAt": "2026-09-30T09:30:21.669Z",
+  "verifiedOnMirrorNode": "CONSENSUSSUBMITMESSAGE, SUCCESS, entity 0.0.9376001, fee 243281 tinybar"
+}

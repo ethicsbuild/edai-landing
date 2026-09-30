@@ -141,6 +141,14 @@ export default function HomePage() {
               </a>
               .
             </p>
+            <p>
+              The first field test, pre-registered on Hedera before the first
+              request, is here:{" "}
+              <a href="/field-tests/001-jev-calibration" className="text-edai-gold underline">
+                Field Test 001, Jev Calibration
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>
