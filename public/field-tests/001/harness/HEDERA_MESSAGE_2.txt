@@ -1,0 +1,1 @@
+EDAI-FT-001 HARNESS 2026-09-30 | analysis code frozen before the first request | HARNESS.sha256 sha256 a3ea4c1430e4a30e57950f5ecb10642f0e03216cf8ed5c2ce7044dc7384dc8f1 | edai.quest/field-tests/001/harness/

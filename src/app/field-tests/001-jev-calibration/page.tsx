@@ -40,6 +40,11 @@ const FILES = [
   ['build_items.py', '3a4a2b75ba8858f5c468d088a5125fc4c6bd12c3617a971cf378624901ce0bf3'],
   ['FROZEN.sha256', ''],
   ['hedera_receipt.json', ''],
+  ['harness/README.md', ''],
+  ['harness/analyze.py', '39bae1b1426e085413da9e406badb2391d49265d7958fecc687823e2417dbc97'],
+  ['harness/jev_run.py', '89a43ff852114d7fe28ae174cecc55066d597c22df050da053b41d4ca1ec1a93'],
+  ['harness/baseline_run.py', '232e7bc9b7f315b883c8053e25c4dbcb500ee1655885dfb0d09fbaa69697000e'],
+  ['harness/HARNESS.sha256', ''],
 ];
 
 export default function FieldTest001Page() {
