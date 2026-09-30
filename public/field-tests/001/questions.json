@@ -1,0 +1,31 @@
+{
+ "asym": {
+  "type": "noul",
+  "primary": "The withheld speaker is one of the Justices of the Court, not an attorney arguing the case.",
+  "paraphrase": "This turn was spoken from the bench by a Justice rather than by counsel at the lectern.",
+  "choice": {
+   "instructions": "Who is the withheld speaker?",
+   "criteria": {
+    "justice": "One of the Justices of the Court",
+    "attorney": "An attorney arguing the case"
+   }
+  },
+  "positive_label_means": "justice"
+ },
+ "equal": {
+  "type": "noul",
+  "primary": "The withheld speaker is the attorney arguing for the {first_party_label}, not the attorney arguing for the {second_party_label}.",
+  "paraphrase": "This turn was spoken by counsel for the {first_party_label} rather than counsel for the {second_party_label}.",
+  "choice": {
+   "instructions": "Which side is the withheld speaker arguing for?",
+   "criteria": {
+    "first": "Counsel for the {first_party_label}",
+    "second": "Counsel for the {second_party_label}"
+   }
+  },
+  "positive_label_means": "first party (petitioner/appellant)"
+ },
+ "model": "jev-latest",
+ "calls_per_item": "one request carrying primary, paraphrase, and choice questions; items jev-0000..jev-0199 additionally re-sent 3 times with the primary question only",
+ "seed": 20260930
+}
