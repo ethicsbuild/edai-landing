@@ -250,11 +250,11 @@ export default function ProtocolPage() {
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Verification Events</p>
-                <p className="text-amber-200/60 text-sm">Topic created. None logged yet.</p>
+                <p className="text-amber-200/60 text-sm">None logged yet. The topic carries one message, the Field Test 001 pre-registration, which is not a verification event.</p>
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Public Auditability</p>
-                <p className="text-amber-200/60 text-sm">Anyone can open the topics and see the same zero we report.</p>
+                <p className="text-amber-200/60 text-sm">Anyone can open the topics and check these counts for themselves.</p>
               </div>
             </div>
           </div>
@@ -407,11 +407,11 @@ export default function ProtocolPage() {
               </div>
               <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg">
                 <p className="text-amber-400 font-semibold mb-2">Weighted Community Input</p>
-                <p className="text-amber-200/60 text-sm">Guardian-verified governance</p>
+                <p className="text-amber-200/60 text-sm">Intended: guardian-verified governance. Not yet in place.</p>
               </div>
               <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg">
                 <p className="text-amber-400 font-semibold mb-2">Public Accountability</p>
-                <p className="text-amber-200/60 text-sm">Transparent decision-making</p>
+                <p className="text-amber-200/60 text-sm">Intended: decisions made in public. No body exists yet to make them.</p>
               </div>
             </div>
 

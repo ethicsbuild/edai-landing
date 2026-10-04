@@ -121,7 +121,12 @@ export default function HomePage() {
             </p>
             <p>
               <strong>Not yet done:</strong> no verification events have been
-              logged to those topics. No pilot has been run to completion. Every
+              logged to those topics. The verification topic carries one
+              message, the pre-registration of{" "}
+              <a href="/field-tests/001-jev-calibration" className="text-edai-gold underline">
+                Field Test 001
+              </a>
+              , a record of a promise rather than a verification. No pilot has been run to completion. Every
               percentage that used to appear on this site was a target, not a
               measurement, and it has been removed.
             </p>
