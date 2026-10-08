@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Every E.D.A.I. field test, with its status. Tests that were refused, withdrawn, or never run stay on this list.',
 };
 
-const LAST_UPDATED = '2026-10-06';
+const LAST_UPDATED = '2026-10-08';
 
 type Status =
   | 'pre-registered'
@@ -46,9 +46,9 @@ const TESTS: FieldTest[] = [
     id: '001',
     title: 'Jev Calibration',
     subject: 'TypeSafe AI, Jev model',
-    status: 'pre-registered',
+    status: 'consent requested',
     statusNote:
-      'As of the protocol date, no request has been sent to TypeSafe and no model output has been seen. There are no results.',
+      'TypeSafe\u2019s terms require its consent before the author can publicly state he used the API. Consent has been requested in writing. No reply is recorded here. The test has not been run and there are no results.',
     preRegistered: '2026-09-30',
     record: 'Hedera mainnet, topic 0.0.9376001, sequence 1',
     href: '/field-tests/001-jev-calibration',

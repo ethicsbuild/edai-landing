@@ -54,7 +54,7 @@ export default function FieldTest001Page() {
           <p className="text-xl text-amber-200/80 font-light">Gage Cass Woodle, with Lumen</p>
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
-              <span className="text-amber-500 font-mono text-sm">STATUS: PRE-REGISTERED · NO REQUEST SENT</span>
+              <span className="text-amber-500 font-mono text-sm">STATUS: PRE-REGISTERED · CONSENT REQUESTED</span>
             </div>
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
               <span className="text-amber-500 font-mono text-sm">RECORD: HEDERA MAINNET · TOPIC {HEDERA.topic} · SEQ {HEDERA.sequence}</span>
