@@ -54,7 +54,7 @@ export default function FieldTest001Page() {
           <p className="text-xl text-amber-200/80 font-light">Gage Cass Woodle, with Lumen</p>
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
-              <span className="text-amber-500 font-mono text-sm">STATUS: PRE-REGISTERED · NO REQUEST SENT</span>
+              <span className="text-amber-500 font-mono text-sm">STATUS: PRE-REGISTERED · CONSENT REQUESTED</span>
             </div>
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
               <span className="text-amber-500 font-mono text-sm">RECORD: HEDERA MAINNET · TOPIC {HEDERA.topic} · SEQ {HEDERA.sequence}</span>
@@ -225,6 +225,9 @@ tx         ${HEDERA.txId}`}</Pre>
           <P>{"The SHA-256 of this document, and of "}<code className="font-mono text-amber-300/90 text-[0.95em]">{"MANIFEST.json"}</code>{", are recorded on the Hedera Consensus Service on the E.D.A.I. topic before the first request is sent. The consensus timestamp of that message is the pre-registration time."}</P>
 
           <div className="pt-10 flex flex-wrap gap-4">
+            <Link href="/field-tests" className="px-6 py-3 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-semibold rounded-lg hover:bg-amber-500/20 transition-colors">
+              All Field Tests
+            </Link>
             <Link href="/state-of-the-work" className="px-6 py-3 bg-amber-500/10 border border-amber-500/30 text-amber-400 font-semibold rounded-lg hover:bg-amber-500/20 transition-colors">
               State of the Work
             </Link>
