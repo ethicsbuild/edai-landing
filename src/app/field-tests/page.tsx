@@ -48,7 +48,7 @@ const TESTS: FieldTest[] = [
     subject: 'TypeSafe AI, Jev model',
     status: 'consent requested',
     statusNote:
-      'TypeSafe\u2019s terms require its consent before the author can publicly state he used the API. Consent has been requested in writing. No reply is recorded here. The test has not been run and there are no results.',
+      'TypeSafe\u2019s terms require its consent before the author can publicly state he used the API. Consent was requested in writing on September 30 and again on October 6, 2026. The only response so far is an automated acknowledgment on October 6. The test has not been run and there are no results.',
     preRegistered: '2026-09-30',
     record: 'Hedera mainnet, topic 0.0.9376001, sequence 1',
     href: '/field-tests/001-jev-calibration',
