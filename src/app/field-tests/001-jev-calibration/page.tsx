@@ -54,7 +54,7 @@ export default function FieldTest001Page() {
           <p className="text-xl text-amber-200/80 font-light">Gage Cass Woodle, with Lumen</p>
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
-              <span className="text-amber-500 font-mono text-sm">STATUS: PRE-REGISTERED · CONSENT REQUESTED</span>
+              <span className="text-amber-500 font-mono text-sm">STATUS: PRIVATE RUN · RESULTS SEALED</span>
             </div>
             <div className="px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded">
               <span className="text-amber-500 font-mono text-sm">RECORD: HEDERA MAINNET · TOPIC {HEDERA.topic} · SEQ {HEDERA.sequence}</span>
@@ -79,6 +79,18 @@ tx         ${HEDERA.txId}`}</Pre>
               <a className="underline text-amber-400" href={HEDERA.hashscanTopic} target="_blank" rel="noreferrer">topic on HashScan</a>
               <a className="underline text-amber-400" href={HEDERA.mirrorTx} target="_blank" rel="noreferrer">mirror node record</a>
             </p>
+          </div>
+
+          <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-6 space-y-3">
+            <p className="text-amber-500 font-mono text-sm">UPDATES</p>
+            <P>
+              {"October 13, 2026. TypeSafe did not give consent to publish. The protocol runs once, privately, and the results stay sealed until TypeSafe consents or there is clear legal footing. Then everything is published, whatever it shows. Otherwise nothing is."}
+            </P>
+            <ul className="font-mono text-xs md:text-sm text-amber-200/80 space-y-2 break-all">
+              <li><a className="underline text-amber-400" href="https://github.com/ethicsbuild/receipts/blob/main/field-test-001/status-2026-10-13.md" target="_blank" rel="noreferrer">status note and outreach record</a><span className="text-amber-200/50">{'  '}Hedera topic 0.0.9376001, sequence 2</span></li>
+              <li><a className="underline text-amber-400" href="/field-tests/001/ERRATA-2026-10-13.md">ERRATA-2026-10-13.md</a><span className="text-amber-200/50">{'  '}run notes, fixed before the first request</span></li>
+              <li><a className="underline text-amber-400" href="/field-tests/001/run-ft001.cjs">run-ft001.cjs</a><span className="text-amber-200/50">{'  '}42c9bf4658ddf25bbc0bc21e536f3a9d33b20dd3e6587f57b2b6a85395b30497</span></li>
+            </ul>
           </div>
 
           <div className="bg-amber-500/5 border border-amber-900/40 rounded-lg p-6 space-y-3">
