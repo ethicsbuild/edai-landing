@@ -78,6 +78,9 @@ export default function StateOfTheWorkPage() {
             <Link href="/field-tests/001-jev-calibration" className="underline text-amber-400">Field Test 001</Link>, a calibration test of another lab&apos;s model, with the protocol&apos;s hash written to the ledger before the first request. It is a record of a promise, not a verification event. That count is still zero.
           </P>
           <P>
+            Update, October 13, 2026: Field Test 001 was run once, privately, exactly as registered. TypeSafe&apos;s terms ask for its consent before either party publicizes the relationship. I asked three times. On October 12 its support desk answered that it does not have the capacity to review or approve specific use cases, which is neither a yes nor a no. So the results are sealed. As each step finished, its hash was written to the verification topic: the status note and an erratum before the first request, a seal for each of the two runs, the analysis script before it opened the answer key, and the results. The topic now carries seven messages, all records of this test. The results are published only if consent or clear legal footing arrives, whatever they show. If neither ever does, they are never published. The count of verification events is still zero.
+          </P>
+          <P>
             No pilot has been run. The paper&apos;s section on early enterprise engagement in healthcare, financial services, and legal described conversations that did not take place.
           </P>
           <P>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Every E.D.A.I. field test, with its status. Tests that were refused, withdrawn, or never run stay on this list.',
 };
 
-const LAST_UPDATED = '2026-10-08';
+const LAST_UPDATED = '2026-10-13';
 
 type Status =
   | 'pre-registered'
@@ -46,11 +46,11 @@ const TESTS: FieldTest[] = [
     id: '001',
     title: 'Jev Calibration',
     subject: 'TypeSafe AI, Jev model',
-    status: 'consent requested',
+    status: 'run',
     statusNote:
-      'TypeSafe\u2019s terms require its consent before the author can publicly state he used the API. Consent was requested in writing on September 30 and again on October 6, 2026. The only response so far is an automated acknowledgment on October 6. The test has not been run and there are no results.',
+      'Run once, privately, on October 13, 2026, exactly as registered. TypeSafe\u2019s terms ask for its consent before either party publicizes the relationship. Consent was requested in writing on September 30, October 6, and October 10. On October 12 TypeSafe support replied that it does not have the capacity to review or approve specific use cases, which is neither a yes nor a no. The results are sealed: each run\u2019s response file, the analysis script, and the results were hashed to the ledger as they were produced. They are published only if consent or clear legal footing arrives, whatever they show. If neither ever does, they are never published.',
     preRegistered: '2026-09-30',
-    record: 'Hedera mainnet, topic 0.0.9376001, sequence 1',
+    record: 'Hedera mainnet, topic 0.0.9376001, sequences 1 through 7',
     href: '/field-tests/001-jev-calibration',
   },
 ];

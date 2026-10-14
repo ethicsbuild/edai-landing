@@ -36,8 +36,8 @@ export default function ProtocolPage() {
               </div>
             </div>
             <p className="text-amber-200/70 font-mono text-sm pt-4 max-w-2xl mx-auto">
-              Credential minted. Topics created. One message on the verification topic as of September 30, 2026: the pre-registration of{' '}
-              <Link href="/field-tests/001-jev-calibration" className="underline text-amber-400">Field Test 001</Link>, a record of a promise, not yet a verification event. This line will change when that number does.{' '}
+              Credential minted. Topics created. Seven messages on the verification topic as of October 13, 2026, all records of{' '}
+              <Link href="/field-tests/001-jev-calibration" className="underline text-amber-400">Field Test 001</Link>: its pre-registration, a status note, an erratum, a seal for each of its two runs, the analysis commit, and the results seal. The test was run once, privately, on October 13; its results are sealed. None of the seven is a verification event. This line will change when that changes.{' '}
               <Link href="/state-of-the-work" className="underline text-amber-400">State of the Work</Link>
             </p>
           </div>
@@ -250,7 +250,7 @@ export default function ProtocolPage() {
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Verification Events</p>
-                <p className="text-amber-200/60 text-sm">None logged yet. The topic carries one message, the Field Test 001 pre-registration, which is not a verification event.</p>
+                <p className="text-amber-200/60 text-sm">None logged yet. The topic carries seven messages, all records of Field Test 001 (its pre-registration, notes, and seals). None is a verification event.</p>
               </div>
               <div className="p-4 bg-amber-950/20 border border-amber-900/30 rounded text-center">
                 <p className="text-amber-500 font-semibold mb-1">Public Auditability</p>
