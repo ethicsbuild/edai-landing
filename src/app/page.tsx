@@ -121,12 +121,12 @@ export default function HomePage() {
             </p>
             <p>
               <strong>Not yet done:</strong> no verification events have been
-              logged to those topics. The verification topic carries one
-              message, the pre-registration of{" "}
+              logged to those topics. The verification topic carries seven
+              messages, all records of{" "}
               <a href="/field-tests/001-jev-calibration" className="text-edai-gold underline">
                 Field Test 001
               </a>
-              , a record of a promise rather than a verification. No pilot has been run to completion. Every
+              : its pre-registration, and the notes and seals from its private run on October 13, 2026. Records of a promise and of a run, not verifications. No pilot has been run to completion. Every
               percentage that used to appear on this site was a target, not a
               measurement, and it has been removed.
             </p>
@@ -148,7 +148,8 @@ export default function HomePage() {
             </p>
             <p>
               The first field test, pre-registered on Hedera before the first
-              request, is here:{" "}
+              request and run privately on October 13, 2026, with its results
+              sealed, is here:{" "}
               <a href="/field-tests/001-jev-calibration" className="text-edai-gold underline">
                 Field Test 001, Jev Calibration
               </a>
