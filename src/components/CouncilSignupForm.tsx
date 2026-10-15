@@ -101,7 +101,7 @@ export function CouncilSignupForm() {
         disabled={loading}
         className="w-full inline-flex items-center justify-center rounded-xl px-6 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors disabled:opacity-60"
       >
-        {loading ? "Submitting..." : "Submit Oath"}
+        {loading ? "Submitting..." : "Add my name"}
       </button>
 
       {msg && (

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CouncilSignupForm } from "../components/CouncilSignupForm";
 
 /**
  * Home Page — E.D.A.I.
@@ -190,16 +191,16 @@ export default function HomePage() {
             test the testers.
           </p>
           <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
-            If you want to help found it, write to me. Tell me who you are and why.
+            If you want to help found it, add your name below and tell me who you are and why. I read every one myself.
           </p>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
-            <a
-              href="mailto:gagewoodle@aiforallapp.com?subject=The%20Council%20of%20E.D.A.I."
-              className="w-full inline-flex items-center justify-center rounded-xl px-6 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors"
-            >
-              Write to Gage
-            </a>
-            <p className="text-sm text-white/50 mt-4">gagewoodle@aiforallapp.com</p>
+            <CouncilSignupForm />
+            <p className="text-sm text-white/50 mt-4">
+              Or write to me directly:{" "}
+              <a href="mailto:gagewoodle@aiforallapp.com?subject=The%20Council%20of%20E.D.A.I." className="underline hover:text-white">
+                gagewoodle@aiforallapp.com
+              </a>
+            </p>
           </div>
         </div>
       </section>
