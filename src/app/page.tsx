@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CouncilSignupForm } from "../components/CouncilSignupForm";
 
 /**
  * Home Page — E.D.A.I.
@@ -185,15 +184,22 @@ export default function HomePage() {
       <section id="join" className="py-16 md:py-24 border-t border-white/10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join the Council</h2>
+          <p className="text-xl text-white/80 mb-6 max-w-3xl mx-auto">
+            The Council of E.D.A.I. does not exist yet. It is being formed: a small
+            circle of people who will hold this work to its own standard, and
+            test the testers.
+          </p>
           <p className="text-xl text-white/80 mb-12 max-w-3xl mx-auto">
-            Become a founding member of the Council of E.D.A.I. Get the protocol,
-            induction checklist, and early access to ceremonies.
+            If you want to help found it, write to me. Tell me who you are and why.
           </p>
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
-            <CouncilSignupForm />
-            <p className="text-sm text-white/50 mt-4">
-              We preserve human agency. No spam. Sacred trust.
-            </p>
+            <a
+              href="mailto:gagewoodle@aiforallapp.com?subject=The%20Council%20of%20E.D.A.I."
+              className="w-full inline-flex items-center justify-center rounded-xl px-6 py-4 text-lg font-medium bg-yellow-600 text-black hover:bg-yellow-500 transition-colors"
+            >
+              Write to Gage
+            </a>
+            <p className="text-sm text-white/50 mt-4">gagewoodle@aiforallapp.com</p>
           </div>
         </div>
       </section>
@@ -226,9 +232,6 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm text-white/40">
-            <p>© {new Date().getFullYear()} The Council of E.D.A.I.</p>
           </div>
         </div>
       </footer>
