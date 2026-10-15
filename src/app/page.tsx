@@ -126,7 +126,7 @@ export default function HomePage() {
               <a href="/field-tests/001-jev-calibration" className="text-edai-gold underline">
                 Field Test 001
               </a>
-              : its pre-registration, and the notes and seals from its private run on October 13, 2026. Records of a promise and of a run, not verifications. No pilot has been run to completion. Every
+              : its pre-registration, and the notes and seals from its private run on October 13, 2026. Records of a promise and of a run, not verifications. No pilot has been run. Every
               percentage that used to appear on this site was a target, not a
               measurement, and it has been removed.
             </p>

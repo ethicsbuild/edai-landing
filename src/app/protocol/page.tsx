@@ -329,9 +329,9 @@ export default function ProtocolPage() {
               </p>
             </div>
             <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
-              <h3 className="text-amber-400 font-bold">What pilots have shown</h3>
+              <h3 className="text-amber-400 font-bold">Pilots</h3>
               <p className="text-amber-100/80">
-                Early interest. Not longitudinal validation. No pilot has been run to completion.
+                None. No pilot has been run, and no institution has deployed E.D.A.I.
               </p>
             </div>
             <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
