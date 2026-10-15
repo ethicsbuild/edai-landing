@@ -331,7 +331,7 @@ export default function ProtocolPage() {
             <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">
               <h3 className="text-amber-400 font-bold">Pilots</h3>
               <p className="text-amber-100/80">
-                None. No pilot has been run, and no institution has deployed E.D.A.I.
+                None. No institution has commissioned E.D.A.I. or run it on its own work. Field Test 001, which tested another lab&apos;s model, was run once privately on October 13, 2026; its results are sealed.
               </p>
             </div>
             <div className="p-6 bg-amber-950/20 border border-amber-900/30 rounded-lg space-y-2">

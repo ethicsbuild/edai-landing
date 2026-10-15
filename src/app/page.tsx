@@ -221,9 +221,6 @@ export default function HomePage() {
                 <p>Guardian credential and event topics on Hedera Mainnet</p>
               </div>
               <div className="flex justify-center gap-6">
-                <a className="hover:text-white transition-colors" href="mailto:council@edai.org">
-                  Contact
-                </a>
                 <a className="hover:text-white transition-colors" href="/protocol">
                   Protocol
                 </a>
